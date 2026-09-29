@@ -66,6 +66,14 @@ Servidor MCP que dá a agentes de IA acesso seguro a um cofre do Obsidian: o age
 - Guardas contra leitura de pastas bloqueadas, escrita fora do permitido, fuga de caminho e gravação de segredos
 - TypeScript estrito, 174 testes, camadas garantidas no build e CI em Node 20, 22 e 24
 
+### [agent-evals](https://github.com/rf-camillo/agent-evals)
+
+Harness de avaliação para agentes de IA que usam ferramentas: roda o agente em cenários, confere o que ele de fato fez e barra mudanças que pioram algum comportamento, mesmo quando a taxa de acerto geral sobe.
+
+- Checagens determinísticas (ferramentas chamadas, respostas e groundedness de preços, horários e datas) e um LLM-judge calibrado, protegido contra prompt injection
+- Guardas em código que seguram a resposta antes do cliente ver, e comparação entre versões que falha no CI a cada regressão
+- [Estudo de caso real](https://github.com/rf-camillo/agent-evals/blob/main/docs/case-study.md): uma regra de prompt provocava a reserva inventada que devia evitar; com a regra no código, 88% → 100% sem regressão
+
 ## Stack
 
 **Linguagens e front-end**
