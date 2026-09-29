@@ -56,6 +56,16 @@ Secretária de IA no WhatsApp para clínicas: responde 24 horas, agenda, remarca
 - Guards, verificação de groundedness e avaliação automatizada com LLM-judge
 - WhatsApp Cloud API oficial, Cloud Run e Firestore
 
+## Código aberto
+
+### [brain-mcp](https://github.com/rf-camillo/brain-mcp)
+
+Servidor MCP que dá a agentes de IA acesso seguro a um cofre do Obsidian: o agente consulta o índice antes de abrir as notas, registra decisões no diário e nunca toca nas pastas bloqueadas. As regras ficam no código, não no prompt.
+
+- Oito ferramentas com esquemas de entrada e saída, CLI em JSON e API para uso como biblioteca
+- Guardas contra leitura de pastas bloqueadas, escrita fora do permitido, fuga de caminho e gravação de segredos
+- TypeScript estrito, 174 testes, camadas garantidas no build e CI em Node 20, 22 e 24
+
 ## Stack
 
 **Linguagens e front-end**
