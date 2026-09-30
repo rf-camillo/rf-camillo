@@ -58,6 +58,14 @@ Secretária de IA no WhatsApp para clínicas: responde 24 horas, agenda, remarca
 
 ## Código aberto
 
+### [Aplausômetro](https://aplausometro.rafaelcamillo.com.br)
+
+Cole um post do LinkedIn e veja uma plateia de 120 leitores reagir em tempo real: a recrutadora, o dev sênior, o investidor, a mãe, o tio do zap. Cada reação sai das probabilidades calibradas do Jev, da TypeSafe, numa única chamada. [Código](https://github.com/rf-camillo/jev-aplausometro).
+
+- Uma chamada responde 17 perguntas: como reage cada uma das 12 personas, três notas do texto com a chance de cada nível e duas perguntas de sim ou não, sempre com a confiança do Jev
+- Plateia animada em canvas, que reage quando você para de digitar, e resultado compartilhável num link que guarda só os números, nunca o texto do post, com cartão pronto para o LinkedIn
+- Rota paga protegida por origem, limite por cliente e por rede, teto de gasto diário e firewall; TypeScript estrito, 192 testes unitários, 24 de ponta a ponta e CI em Node 20, 22 e 24
+
 ### [brain-mcp](https://github.com/rf-camillo/brain-mcp)
 
 Servidor MCP que dá a agentes de IA acesso seguro a um cofre do Obsidian: o agente consulta o índice antes de abrir as notas, registra decisões no diário e nunca toca nas pastas bloqueadas. As regras ficam no código, não no prompt.
