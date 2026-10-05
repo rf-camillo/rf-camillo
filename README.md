@@ -56,6 +56,16 @@ Secretária de IA no WhatsApp para clínicas: responde 24 horas, agenda, remarca
 - Guards, verificação de groundedness e avaliação automatizada com LLM-judge
 - WhatsApp Cloud API oficial, Cloud Run e Firestore
 
+## Projeto pessoal
+
+### [Wefis: atlas da fissura labiopalatina](https://wefis.rafaelcamillo.com.br)
+
+Atlas da fissura labiopalatina no Brasil, desenvolvido a partir do tema do meu TCC. Reúne em uma única página onde as crianças nascem, onde são operadas, com que idade e a distância que percorrem até o tratamento. Ao buscar uma cidade, um painel lateral apresenta o centro de tratamento mais próximo, os hospitais onde as crianças do município são operadas e a idade da primeira cirurgia. Os dados são públicos, do SUS (SINASC, SIH e CNES), de 2015 a 2024.
+
+- Pipeline em Python e DuckDB que transforma os microdados em indicadores agregados
+- Site estático em Next.js, com mapas em SVG renderizados no servidor, painel lateral sincronizado com o endereço, temas claro e escuro e layout responsivo
+- TypeScript estrito, camadas validadas no build, 88 testes unitários, 17 testes do pipeline, 36 testes de ponta a ponta com verificação de acessibilidade (axe) e CI em Node 20, 22 e 24
+
 ## Código aberto
 
 ### [Aplausômetro](https://aplausometro.rafaelcamillo.com.br)
@@ -124,5 +134,5 @@ Harness de avaliação para agentes de IA que usam ferramentas: roda o agente em
 ---
 
 <p align="center">
-  O código da Clarice.ai, da Doclin e da Vassis é privado. Os detalhes de cada projeto estão em <a href="https://rafaelcamillo.com.br">rafaelcamillo.com.br</a>.
+  O código da Clarice.ai, da Doclin, da Vassis e do Wefis é privado. Os detalhes de cada projeto estão em <a href="https://rafaelcamillo.com.br">rafaelcamillo.com.br</a>.
 </p>
